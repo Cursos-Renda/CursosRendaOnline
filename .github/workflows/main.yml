@@ -24,7 +24,7 @@ jobs:
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         ARGS: "-rlgoDzvc -i --delete"
-        SOURCE: "dist/"
+        SOURCE: "checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9/dist/"
         REMOTE_HOST: ${{ vars.REMOTE_HOST }}
         REMOTE_USER: ${{ vars.REMOTE_USER }}
         TARGET: ${{ vars.TARGET }}
