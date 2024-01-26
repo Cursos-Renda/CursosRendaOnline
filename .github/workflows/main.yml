@@ -24,9 +24,8 @@ jobs:
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         ARGS: "-rlgoDzvc -i --delete"
-        SOURCE: "/dev"
+        SOURCE: "/dist"
         REMOTE_HOST: ${{ vars.REMOTE_HOST }}
         REMOTE_USER: ${{ vars.REMOTE_USER }}
         TARGET: ${{ vars.TARGET }}
         EXCLUDE: "/dist/, /node_modules/"
-        
