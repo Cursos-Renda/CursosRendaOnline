@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 4.375rem;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    nav{
+        display: flex;
+        list-style: none;
+        border: 1px solid black;
+        width: 25rem;
+        justify-content: space-between;
+    }
+}
