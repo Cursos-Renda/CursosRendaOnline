@@ -1,8 +1,18 @@
+import styles from "./styles.module.scss"
 import { CategoriesCard } from "./CategoriesCard"
 
 export const CategoriesList = () => {
     return(
-        <ul>
+        <ul className={styles.categoriesList}>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
+            <CategoriesCard/>
             <CategoriesCard/>
         </ul>
     )
