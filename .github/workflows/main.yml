@@ -1,0 +1,32 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+    - name: Install dependencies
+      run: npm install
+    - name: Build
+      run: npm run build
+    - name: Hostinger Deployment
+      uses: easingthemes/ssh-deploy@main
+      with:
+        SSH_PRIVATE_KEY: ${{secrets.SERVER_SSH_KEY}}
+        ARGS: "-rlgoDzvc --delete"
+        SOURCE: "dist/"
+        REMOTE_HOST: ${{vars.REMOTE_HOST}}
+        REMOTE_USER: ${{vars.REMOTE_USER}}
+        REMOTE_PORT: ${{vars.REMOTE_PORT}}
+        TARGET: ${{vars.TARGET}}
+        EXCLUDE: "/dist/, /node_modules/"
