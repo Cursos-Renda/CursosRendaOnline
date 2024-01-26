@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy-production:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -24,6 +24,7 @@ jobs:
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         ARGS: "-rlgoDzvc -i --delete"
+        SOURCE: "/dev"
         REMOTE_HOST: ${{ vars.REMOTE_HOST }}
         REMOTE_USER: ${{ vars.REMOTE_USER }}
         TARGET: ${{ vars.TARGET }}
