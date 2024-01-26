@@ -1,16 +1,19 @@
-name: Deploy to Hostinger
+name: Deploy to Hostinger develop
 
 on:
   push:
     branches:
-      - main
+      - develop
   pull_request:
     branches:
-      - main
+      - develop
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+        name: development
+        url: https://dev.cursosrendaonline.net
     steps:
     - name: Checkout
       uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
