@@ -1,6 +1,8 @@
+import styles from "./styles.module.scss"
+
 export const Footer = () => {
     return(
-        <footer>
+        <footer className={styles.footer}>
             <figure>
                 <h2>logomarcas</h2>
             </figure>
