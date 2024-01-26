@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./styles.module.scss"
 
 export const ProductCard = () => {
@@ -8,7 +9,9 @@ export const ProductCard = () => {
             </figure>
             <div>
                 <span>description</span>
-                <span>link</span>
+                <Link to={"/product"}>
+                    comprar
+                </Link>
             </div>
         </li>
     )

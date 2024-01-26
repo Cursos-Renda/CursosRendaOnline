@@ -1,10 +1,10 @@
-import { HomePage } from "./pages/HomePage";
+import { RouterMain } from "./router";
 
 export function App() {
 
   return (
     <>
-     <HomePage/>
+     <RouterMain/>
     </>
   )
 }
