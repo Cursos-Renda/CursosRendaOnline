@@ -1,8 +1,10 @@
+import logo from "../../assets/Logotipo_para_loja_de_informatica_e_computacao.png"
+
 export const Header = () => {
     return (
         <header>
             <figure>
-                <h2>logomarca</h2>
+                <img src={logo} alt="Logo" />
             </figure>
             <nav>
                 <li>Sobre</li>
