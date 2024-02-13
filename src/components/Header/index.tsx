@@ -6,11 +6,14 @@ export const Header = () => {
     <header className={styles.header}>
       <figure>
         <img src={logo} alt="Logo" />
+        <figcaption>
+          <strong>RENDA |</strong> Cursos Online
+        </figcaption>
       </figure>
       <nav>
+        <li>Cursos</li>
         <li>Sobre</li>
-        <li>Produtos</li>
-        <li>Contatos</li>
+        <li>Ajuda</li>
       </nav>
     </header>
   );
