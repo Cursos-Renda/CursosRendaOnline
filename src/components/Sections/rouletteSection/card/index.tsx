@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import React from "react";
 
 
 export const CardLi = ({ img, title, link, className, style }: any) => {

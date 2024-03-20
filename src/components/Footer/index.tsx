@@ -1,6 +1,8 @@
 import styles from "./styles.module.scss"
 import logo from "../../assets/logo_white.svg"
 import logoHotmart from "../../assets/logo_hotmart.svg"
+import React from "react";
+
 
 export const Footer = () => {
     

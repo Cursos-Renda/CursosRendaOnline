@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'; // Arquivo de estilo CSS
 import { CardLi } from './card';
 import livro from "../../../assets/Miolo-diagonal-O-livro-dos-amigos-site.png"
+import React from "react";
 
 const cards = [
     { id: 1, content: "Card 1" },

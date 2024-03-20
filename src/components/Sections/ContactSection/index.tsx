@@ -1,5 +1,6 @@
 import contact from "../../../assets/contatos.svg"
 import styles from "./styles.module.scss";
+import React from "react";
 
 
 export const ContactSection = () => {

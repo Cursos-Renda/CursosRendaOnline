@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.svg"
 import carrinho from "../../assets/carrinhoHeader.svg"
 import styles from "./styles.module.scss"
+import React from "react";
+
 
 export const Header = () => {
     return (

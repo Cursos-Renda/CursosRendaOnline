@@ -1,6 +1,7 @@
 import banner from "../../../assets/fragment2_bannerSection.svg";
 import styles from "./styles.module.scss";
 import sloganGraphc from "../../../assets/sloganGraphc.svg";
+import React from "react";
 
 export const BannerSection = () => {
     return (
