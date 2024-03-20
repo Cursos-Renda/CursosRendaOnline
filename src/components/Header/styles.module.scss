@@ -1,23 +1,57 @@
-.header{
-    display: flex;
-    justify-content: space-around;
-    height: 4.375rem;
-    align-items: center;
-    border: 1px solid black;
-    width: 100%;
-    margin-bottom: 1.5625rem;
+#header {
     background-color: black;
-    figure{
-        img{
-            width: 4.375rem;
+
+    #headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    #logoBox {
+        display: flex;
+        align-items: center;
+
+        figure {
+            margin-right: 8px;
+        }
+
+        p {
+            .logo1 {
+                color: white;
+            }
+
+            .logo2 {
+                color: #FF6100;
+            }
         }
     }
-    nav{
+
+    form {
+        input {
+            width: 500px;
+            height: 25px;
+            border-radius: 25px;
+            padding-left: 10px;
+        }
+    }
+
+    menu {
+        select {
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
         display: flex;
-        list-style: none;
-        border: 1px solid black;
-        width: 25rem;
         justify-content: space-between;
+        width: 200px;
         color: white;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
     }
 }

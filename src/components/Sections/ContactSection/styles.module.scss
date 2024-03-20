@@ -1,8 +1,71 @@
-.contactSection{
+#bannerSection {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 15px 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF6100;
+    padding: 30px 0;
+    margin-bottom: 80px;
+
+    h2 {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                input {
+                    border-radius: 10px;
+                    border: none;
+                    height: 27px;
+                    margin-bottom: 10px;
+                    width: 80%;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                }
+            }
+
+        }
+
+        textarea {
+            width: 100%;
+            border-radius: 20px;
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+            resize: none;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 150px;
+            height: 35px;
+            border-radius: 15px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            font-weight: 600;
+            padding: 0 6px;
+            cursor: pointer;
+        }
+    }
 }

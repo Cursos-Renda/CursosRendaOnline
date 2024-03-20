@@ -1,10 +1,14 @@
-import { HomePage } from "./pages/HomePage";
+import { BannerSection } from "./components/sections/bannerSections";
+import { ContactSection } from "./components/sections/contactSection";
+import { Roulette } from "./components/sections/rouletteSection";
 
 export function App() {
 
   return (
     <>
-     <HomePage/>
+      <BannerSection />
+      <Roulette />
+      <ContactSection/>
     </>
   )
 }
