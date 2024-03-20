@@ -1,4 +1,4 @@
-import { BannerSection } from "./components/sections/bannerSections";
+import { BannerSection } from "./components/sections/bannerSections/BannerSection";
 import { ContactSection } from "./components/sections/contactSection";
 import { Roulette } from "./components/sections/rouletteSection";
 import { DefaultTemplate } from "./template/defaultTemplate";
