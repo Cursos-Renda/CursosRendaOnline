@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from "./styles.module.scss";
 import IMGBannerLeft from "../../../assets/bannerImgLeft.png"
 import IMGBannerRight from "../../../assets/bannerIMG.svg"

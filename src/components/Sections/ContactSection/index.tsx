@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './styles.module.scss';
 import IMGContact from '../../../assets/contactIMG.svg'
 

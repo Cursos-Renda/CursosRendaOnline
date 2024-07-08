@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './styles.module.scss';
 import IMGLogoWhite from '../../assets/logo_white.svg';
 import IMGLogoHotmart from '../../assets/logo_hotmart.svg';
