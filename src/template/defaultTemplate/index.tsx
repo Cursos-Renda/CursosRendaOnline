@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
-import { Header } from "../../components/header"
-import { Footer } from "../../components/footer"
+import { Header } from "../../components/header/index.tsx"
+import { Footer } from "../../components/footer/index.tsx"
 
 interface props {
     children: ReactNode
