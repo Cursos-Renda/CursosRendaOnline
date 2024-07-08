@@ -1,19 +1,19 @@
-import React, { ReactNode } from "react"
-import { Header } from "../../components/header/index.tsx"
-import { Footer } from "../../components/footer/index.tsx"
+import React, { ReactNode } from "react";
+import { Header } from "../../components/header";
+import { Footer } from "../../components/footer";
 
-interface props {
-    children: ReactNode
+interface Props {
+    children: ReactNode;
 }
 
-export const DefaultTemplate: React.FC<props> = ({children}) => {
+export const DefaultTemplate: React.FC<Props> = ({ children }) => {
     return (
         <>
-            <Header/>
+            <Header />
             <main>
                 {children}
             </main>
-            <Footer/>
+            <Footer />
         </>
-    )
-}
+    );
+};
