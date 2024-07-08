@@ -1,7 +1,9 @@
+import React from 'react';
 import styles from "./styles.module.scss";
 import IMGLogo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import IMGStoreCar from "../../assets/storeCar.svg"
+
 
 export const Header = () => {
     return (
