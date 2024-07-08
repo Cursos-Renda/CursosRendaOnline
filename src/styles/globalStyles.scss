@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}

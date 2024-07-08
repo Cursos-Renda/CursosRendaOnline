@@ -1,27 +1,25 @@
-import contact from "../../../assets/contatos.svg"
-import styles from "./styles.module.scss";
-import React from "react";
-
+import styles from './styles.module.scss';
+import IMGContact from '../../../assets/contactIMG.svg'
 
 export const ContactSection = () => {
     return (
-        <section id={styles.bannerSection}>
-            <h2>CONTATE-NOS</h2>
-            <form action="">
-                <div>
-                    <figure>
-                        <img src={contact} alt="Contate-nos" />
-                    </figure>
-                    <div>
-                        <input type="text" placeholder="Nome:" />
-                        <input type="text" placeholder="E-mail:" />
-                        <input type="text" placeholder="Telefone:" />
-                        <input type="text" placeholder="Assunto:" />
+        <section className={styles.contactSection}>
+            <div className={styles.contactSection__container}>
+                <h3 className={styles.contactSection__title}>CONTATE-NOS</h3>
+                <form className={styles.contactSection__form}>
+                    <div className={styles.contactSection__form__primarySection}>
+                        <img src={IMGContact} alt="CONTATE-NOS" className={styles.contactSection__form__primarySection__img} />
+                        <div className={styles.contactSection__form__primarySection__inputsDiv}>
+                            <input type="text" className={styles.contactSection__form__primarySection__inputsDiv__input} placeholder='Nome:' />
+                            <input type="text" className={styles.contactSection__form__primarySection__inputsDiv__input} placeholder='E-mail:' />
+                            <input type="text" className={styles.contactSection__form__primarySection__inputsDiv__input} placeholder='Telefone:' />
+                            <input type="text" className={styles.contactSection__form__primarySection__inputsDiv__input} placeholder='Assunto:' />
+                        </div>
                     </div>
-                </div>
-                <textarea name="" id="" cols={30} rows={6} placeholder="Escreva aqui..."></textarea>
-                <button>Enviar mensagem</button>
-            </form>
+                    <textarea className={styles.contactSection__form__textareaContent} rows={4} placeholder='Escreva aqui...'/>
+                    <button type="submit" className={styles.contactSection__form__buttonSend}>Enviar</button>
+                </form>
+            </div>
         </section>
     )
 }

@@ -1,0 +1,22 @@
+.sliderSection {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+  
+    &__slider {
+      width: 80%;
+      margin: 0 auto;
+      height: 350px;
+      position: relative;
+      padding-bottom: 25px !important;
+
+  
+      :global {
+        .swiper-pagination  {
+          position: absolute;
+          bottom: 0 !important;
+        }
+      }
+    }
+  }
+  

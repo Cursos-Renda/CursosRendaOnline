@@ -1,17 +1,19 @@
-import { Footer } from "../../components/footer"
+import React, { ReactNode } from "react"
 import { Header } from "../../components/header"
-import React from "react"
+import { Footer } from "../../components/footer"
 
-export const DefaultTemplate = ({ children }:any) => {
+interface props {
+    children: ReactNode
+}
 
-
+export const DefaultTemplate: React.FC<props> = ({children}) => {
     return (
         <>
-            <Header />
+            <Header/>
             <main>
                 {children}
             </main>
-            <Footer />
+            <Footer/>
         </>
     )
 }

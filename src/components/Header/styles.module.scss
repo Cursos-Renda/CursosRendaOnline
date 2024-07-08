@@ -1,57 +1,99 @@
-#header {
+.header {
+    width: 100%;
     background-color: black;
+    height: 5.625rem;
 
-    #headerContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 7px;
-        padding-bottom: 7px;
-    }
-
-    #logoBox {
-        display: flex;
-        align-items: center;
-
-        figure {
-            margin-right: 8px;
-        }
-
-        p {
-            .logo1 {
-                color: white;
-            }
-
-            .logo2 {
-                color: #FF6100;
-            }
-        }
-    }
-
-    form {
-        input {
-            width: 500px;
-            height: 25px;
-            border-radius: 25px;
-            padding-left: 10px;
-        }
-    }
-
-    menu {
-        select {
-            background-color: transparent;
-            border: none;
-            color: white;
-        }
-
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
         display: flex;
         justify-content: space-between;
-        width: 200px;
-        color: white;
+        align-items: center;
     }
 
-    button {
-        background-color: transparent;
-        border: none;
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+
+        &__img {
+            object-fit: contain;
+        }
+
+        &__caption {
+            font-family: var(--font-family-primary);
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        &__span {
+            color: var(--color-primary);
+            font-size: 0.9375rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+        width: 45%;
+        align-items: center;
+
+        &__input {
+            width: 70%;
+            height: 2.1875rem;
+            border-radius: 0.9375rem;
+            padding-left: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.9375rem;
+            padding-right: 1.5625rem;
+
+            &__item {
+                cursor: pointer;
+                & a {
+                    color: white;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+
+                &__select {
+                    width: 5.9375rem;
+                    appearance: none;
+                    background: transparent url('../../assets/polygon_select.svg') 95.5% 50% no-repeat;
+                    color: white;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    outline: none;
+                    padding-left: 0.3125rem;
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--color-primary);
+                        background: transparent url('../../assets/polygon_select_hover.svg') 95.5% 50% no-repeat;
+                    }
+                    &:focus {
+                        border: 1px solid transparent;
+                        box-shadow: none;
+                    }
+                    & option {
+                        background: black;
+                    }
+                }
+            }
+        }
+        &__car {
+            object-fit: contain;
+        }
     }
 }

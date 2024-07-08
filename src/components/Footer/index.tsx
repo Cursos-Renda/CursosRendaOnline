@@ -1,24 +1,17 @@
-import styles from "./styles.module.scss"
-import logo from "../../assets/logo_white.svg"
-import logoHotmart from "../../assets/logo_hotmart.svg"
-import React from "react";
-
+import styles from './styles.module.scss';
+import IMGLogoWhite from '../../assets/logo_white.svg';
+import IMGLogoHotmart from '../../assets/logo_hotmart.svg';
 
 export const Footer = () => {
-    
     return (
-        <footer id={styles.footer}>
-            <div id={styles.footerContainer}>
-                <div id={styles.logoBox}>
-                    <figure>
-                        <img src={logo} alt="Renda Cursos Online" />
-                    </figure>
-                    <p><span className={styles.logo1}>RENDA | </span><span className={styles.logo2}>Cursos Online</span></p>
-                </div>
-                <p className={styles.rights}>© Todos os direitos reservados</p>
-                <figure>
-                    <img src={logoHotmart} alt="Hotmart" />
+        <footer className={styles.footer}>
+            <div className={styles.footer__container}>
+                <figure className={styles.footer__logo}>
+                    <img src={IMGLogoWhite} alt="Renda Curso Online" className={styles.footer__logo__img} />
+                    <figcaption className={styles.footer__logo__caption}>RENDA | <span className={styles.footer__logo__span}>Cursos Online</span></figcaption>
                 </figure>
+                <span className={styles.footer__copyright}>Todos os direitos reservados &copy; 2024</span>
+                <img src={IMGLogoHotmart} alt="Hotmart" />
             </div>
         </footer>
     )
